@@ -35,7 +35,10 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: pnpm run build
+        run: |
+          echo "SUPABASE URL configurada: ${{ secrets.VITE_SUPABASE_URL != '' }}"
+          echo "SUPABASE KEY configurada: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY != '' }}"
+          pnpm run build
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
