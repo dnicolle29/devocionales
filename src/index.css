@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Arial, sans-serif;
+  color: #4a3f46;
+  background-color: #fffafc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* ========================================
+   MODO OSCURO
+   ======================================== */
+
+html.dark body {
+  background-color: #171816;
+}
+
+/* Fondos principales */
+html.dark [class~="bg-[#F7F5F0]"] {
+  background-color: #171816 !important;
+}
+
+html.dark [class~="bg-[#FCFBF8]"] {
+  background-color: #20211e !important;
+}
+
+html.dark [class~="bg-[#F1EEE8]"] {
+  background-color: #292a26 !important;
+}
+
+html.dark [class~="bg-[#F4F1EB]"] {
+  background-color: #2d2e29 !important;
+}
+
+html.dark [class~="bg-[#F8F6F1]"] {
+  background-color: #252622 !important;
+}
+
+html.dark [class~="bg-[#FAF9F6]"] {
+  background-color: #242520 !important;
+}
+
+html.dark [class~="bg-[#F2F0EB]"] {
+  background-color: #2b2c28 !important;
+}
+
+html.dark [class~="bg-[#E8EEE8]"] {
+  background-color: #303a32 !important;
+}
+
+html.dark [class~="bg-[#F1EEE0]"] {
+  background-color: #3b382c !important;
+}
+
+/* Textos */
+html.dark [class~="text-[#514A45]"] {
+  color: #ebe7df !important;
+}
+
+html.dark [class~="text-[#657466]"] {
+  color: #aab8aa !important;
+}
+
+html.dark [class~="text-[#817A74]"] {
+  color: #b5aea5 !important;
+}
+
+html.dark [class~="text-[#8A8179]"] {
+  color: #b5aea5 !important;
+}
+
+html.dark [class~="text-[#A39A92]"] {
+  color: #9d978f !important;
+}
+
+html.dark [class~="text-[#7F8B81]"] {
+  color: #aab5aa !important;
+}
+
+html.dark [class~="text-[#6F6862]"] {
+  color: #c7c0b7 !important;
+}
+
+html.dark [class~="text-[#59655B]"] {
+  color: #c1ccc2 !important;
+}
+
+html.dark [class~="text-[#756B4F]"] {
+  color: #c8bd8d !important;
+}
+
+html.dark [class~="text-[#795F55]"] {
+  color: #d0aaa0 !important;
+}
+
+/* Bordes */
+html.dark [class~="border-[#E4DED4]"] {
+  border-color: #3b3d38 !important;
+}
+
+html.dark [class~="border-[#E7E1D8]"] {
+  border-color: #383a35 !important;
+}
+
+html.dark [class~="border-[#E7E2D9]"] {
+  border-color: #383a35 !important;
+}
+
+html.dark [class~="border-[#DED8CE]"] {
+  border-color: #41433d !important;
+}
+
+html.dark [class~="border-[#CFC9B8]"] {
+  border-color: #625d4c !important;
+}
+
+html.dark [class~="border-[#A5B2A5]"] {
+  border-color: #657466 !important;
+}
+
+/* Fondos de mensajes */
+html.dark [class~="bg-[#F3ECE8]"] {
+  background-color: #332925 !important;
+}
+
+html.dark [class~="bg-[#D6E1D6]"] {
+  background-color: #39443a !important;
+}
+
+/* Botones principales */
+html.dark [class~="bg-[#657466]"] {
+  background-color: #657466 !important;
+}
+
+html.dark [class~="hover:bg-[#566457]"]:hover {
+  background-color: #78887a !important;
+}
+
+/* Hover de navegación */
+html.dark [class~="hover:bg-[#F2F0EB]"]:hover {
+  background-color: #2b2c28 !important;
+}
+
+/* Favoritos */
+html.dark [class~="hover:bg-[#EAE5D2]"]:hover {
+  background-color: #4a4636 !important;
+}
+
+/* Anillos de focus */
+html.dark [class~="focus:ring-[#E8EEE8]"]:focus {
+  --tw-ring-color: #3f4d42 !important;
+}
+
+html.dark [class~="focus:bg-white"]:focus {
+  background-color: #2b2c28 !important;
+}
+
+/* Sombra más discreta en oscuro */
+html.dark [class*="shadow-["] {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18) !important;
+}
